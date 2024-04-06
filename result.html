@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result</title>
+
+
+<style>
+       body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #d0d0d0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .form-container {
+        background-color:#fff;
+        padding: 40px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        width: 90%;
+        animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .form-container h2,b,p {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        animation: slideIn 1s ease;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        animation: slideIn 1s ease;
+    }
+
+    .form-group label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #f2f2f2;
+        transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus {
+        outline: none;
+        border-color: #ff6347;
+    }
+
+    .form-group .error-message {
+        color: red;
+        font-size: 0.8rem;
+        margin-top: 5px;
+        animation: fadeIn 1s ease;
+    }
+
+    .form-group .success-message {
+        color: green;
+        font-size: 0.8rem;
+        margin-top: 5px;
+        animation: fadeIn 1s ease;
+    }
+
+    .form-group button {
+        padding: 12px 20px;
+        background-color: #ff6347;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        animation: slideIn 1s ease;
+    }
+
+    .form-group button:hover {
+        background-color: #ff4500;
+    }
+
+    .share-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #shareBtn {
+        background-color: #25d366;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        outline: none;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        letter-spacing: 1px;
+        animation: fadeIn 1s ease;
+    }
+
+    #shareBtn:hover {
+        background-color: #128c7e;
+        transform: scale(1.05);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .loading {
+        display: none;
+        /* Define your loading animation styles */
+    }
+
+    .message {
+        margin-top: 20px;
+        padding: 13px 30px;
+        border-radius: 15px;
+        background-color: #ffa500;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        animation: slideIn 1s ease;
+    }
+
+    .center {
+        text-align: center;
+        display: none;
+        animation: slideIn 1s ease;
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="form-container">
+    <style>
+
+        #image-container {
+          display: none;
+          text-align: center;
+        }
+        img{
+            width: 100%;
+            animation: slideIn 1s ease;
+        }
+.sc{
+    animation: slideIn 1s ease;
+}
+      </style>
+      <h2 id="text">Your Application is in waiting list please wait for <span id="timer">
+      
+      15 </span><span id="text"> Seconds.</span> </h2>
+      <div id="image-container">
+      <h2>നോക്കി ഇരുന്നോ ഇപ്പം കിട്ടും 😂</h2>
+
+<img alt="" border="0"   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4W5QeAZ8H9NoBOMN905JQtxB0GUV4eujV6oNR7zw-PSRYnnB4VTwXla6VNMG-cniG2isVKYc5BwucN4X1VggypZFbU1N2z7JFKuvyJIZ9ELEj_APk6zY4Ca3QIAXC9r_IdrRO-bibCe0WlCQ7MkPDPXv8xX2ln3zMA7QJAman7YNWofR5tfet1kIffEE/s320/Sixty-and-Me-Words-Can%E2%80%99t-Describe-the-Cuteness-of-this-Baby%E2%80%99s-Laugh.jpg"/>
+      <br>
+      <b class="sc">This website is just for fun. We don't collect or store any data of our users.</b>
+      </div>
+      
+      <script>
+        $(document).ready(function() {
+          var timer = 15;
+          
+          var timerInterval = setInterval(function() {
+            timer--;
+            $("#timer").text(timer);
+            
+            if (timer <= 0) {
+              clearInterval(timerInterval);
+              $("#timer").hide();
+              $("#text").hide();
+
+              $("#image-container").show();
+            }
+          }, 1000);
+        });
+      </script>
+</div>
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-70VVMTR0PB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-70VVMTR0PB');
+</script>
+
+</body>
+</html>
